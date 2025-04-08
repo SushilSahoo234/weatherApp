@@ -1,0 +1,60 @@
+{
+  "name": "weatherforecastingwebsite",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "eslint": "eslint ./src",
+    "eslint:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "@iconscout/react-unicons": "^2.2.4",
+    "luxon": "^3.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.8.0",
+    "react-select-async-paginate": "^0.7.9",
+    "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.1.0",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

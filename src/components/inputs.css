@@ -1,0 +1,137 @@
+/* Custom styles for AsyncPaginate component */
+.react-select-container {
+  width: 100%;
+}
+
+.react-select__control {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  border-radius: 2rem !important;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
+  min-height: 3rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.react-select__control--is-focused {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+.react-select__value-container {
+  padding: 0 1rem !important;
+}
+
+.react-select__input,
+.react-select__single-value {
+  color: white !important;
+  font-size: 1rem !important;
+}
+
+.react-select__placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.react-select__menu {
+  background: #2d3748 !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden !important;
+  margin-top: 0.5rem !important;
+}
+
+.react-select__option {
+  background: transparent !important;
+  color: white !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.react-select__option--is-focused {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.react-select__indicator-separator {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.react-select__dropdown-indicator {
+  color: rgba(255, 255, 255, 0.7) !important;
+  padding: 0 0.5rem 0 0 !important;
+}
+
+.react-select__dropdown-indicator:hover {
+  color: white !important;
+}
+
+/* Modern toggle switch styles */
+.temperature-toggle {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.temperature-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 2.5rem;
+  transition: all 0.4s ease;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "°C";
+  height: 2rem;
+  width: 2rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background: #7e22ce;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.temperature-toggle input:checked + .toggle-slider {
+  background: rgba(156, 163, 175, 0.3);
+}
+
+.temperature-toggle input:checked + .toggle-slider:before {
+  content: "°F";
+  transform: translateX(2.5rem);
+  background: #1d4ed8;
+}
+
+/* Button styles for search and location icons */
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
