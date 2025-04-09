@@ -1,12 +1,14 @@
 import { DateTime } from "luxon";
 import {
-  UilTemperature,
-  UilTear,
-  UilWind,
-  UilSun,
-  UilSunset,
-  UilArrowUp,
-  UilArrowDown,
+  UilThermometer,  // Alternative for UilTemperature
+  UilRaindrops,    // Alternative for UilTear
+  UilWind,         // Should still work
+  UilSun,         
+  UilSunset,       
+  UilArrowUp,     
+  UilArrowDown,   
+  UilSearch,      
+  UilLocationPoint
 } from "@iconscout/react-unicons";
 
 function TemperatureDetails({ data, units }) {
@@ -25,12 +27,12 @@ function TemperatureDetails({ data, units }) {
 
   const weatherStats = [
     { 
-      icon: <UilTemperature className="text-white" />,
+      icon: <UilThermometer className="text-white" />,
       label: "Feels Like", 
       value: `${Math.round(data.main.feels_like)}${tempUnit}`
     },
     { 
-      icon: <UilTear className="text-white" />,
+      icon: <UilRaindrops className="text-white" />,
       label: "Humidity", 
       value: `${data.main.humidity}%` 
     },
