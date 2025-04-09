@@ -1,8 +1,8 @@
 import { DateTime } from "luxon";
 import {
-  UilThermometer,  // Alternative for UilTemperature
-  UilRaindrops,    // Alternative for UilTear
-  UilWind,         // Should still work
+  UilThermometer, 
+  UilRaindrops,   
+  UilWind,        
   UilSun,         
   UilSunset,       
   UilArrowUp,     

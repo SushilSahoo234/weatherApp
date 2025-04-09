@@ -13,8 +13,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
   );
-
-  // Toggle Dark Mode and Save Preference
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -61,7 +59,6 @@ function App() {
   return (
     <>    
     <div className="flex flex-col items-center min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white transition-all duration-300">
-      {/* Dark Mode Toggle */}
 
       <button
         onClick={() => setDarkMode(!darkMode)}
@@ -69,8 +66,6 @@ function App() {
       >
         {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
       </button>
-
-      {/* Weather UI Container */}
       <div className="mx-auto max-w-screen-md mt-3 py-4 px-6 sm:px-10 md:px-16 lg:px-32 bg-white bg-opacity-20 dark:bg-gray-800 dark:bg-opacity-50 backdrop-blur-md rounded-lg drop-shadow-lg transition-all duration-300">
         <Inputs onSearchChange={handleOnSearchChange} onUnitChange={handleUnitChange} />
         {currentWeather && <TimeAndDate data={currentWeather} />}
